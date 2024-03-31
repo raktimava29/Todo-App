@@ -1,0 +1,18 @@
+
+import {useState} from 'react';
+
+export default function Input(){
+    const[val,setVal] = useState("")
+    const[tasks,setTask] = useState([])
+    function click(){
+        setTask([...tasks ,val]);
+        setVal('')
+    }
+    return(
+        <div>
+        <input onChange={(e) => setVal(e.target.value)} value={val} type='text'></input>
+        <button onClick={click} type='submit'>Add</button>
+        {tasks.map((item) =>(<h1 key={item} >{item}</h1>) )}
+        </div> 
+    )
+}
