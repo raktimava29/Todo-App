@@ -1,0 +1,22 @@
+.block{
+    background-color: #eee4e4;
+    padding: 1.25% 0.085%;
+    width: 50%;
+    margin: 2% 20%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+}
+
+.bar{
+    width: 75%;
+}
+
+.butt{
+    background-color: blue;
+    color: white;
+    border: solid blue;
+    border-radius: 10px; 
+    padding: 0.75% 1.2%;
+    cursor: pointer;
+}
